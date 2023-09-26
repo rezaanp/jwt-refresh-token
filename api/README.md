@@ -1,6 +1,12 @@
 # Running Project
 
-- Entry **task-2** Folder
+- Entry **api** Folder
+- Install modules project
+
+  ```json
+  npm install
+  ```
+
 - Install nodemon globally
 
   ```json
@@ -38,6 +44,23 @@ Authenticate a user and get an access token & refresh token.
   }
   ```
 
+  **Success Response**
+
+  ```json
+  {
+    "accessToken": "access_token",
+    "accessToken": "refresh_token"
+  }
+  ```
+
+  **Error Response**
+
+  ```json
+  {
+    "message": "Error message"
+  }
+  ```
+
 ### REFRESH TOKEN
 
 This API provides new access tokens using refresh tokens.
@@ -48,6 +71,22 @@ This API provides new access tokens using refresh tokens.
 
   ```json
   {
-    "token": "y0uRsEcRetT0ken$"
+    "token": "your_refresh_token"
+  }
+  ```
+
+  **Success Response**
+
+  ```json
+  {
+    "accessToken": "new_access_token"
+  }
+  ```
+
+  **Error Response**
+
+  ```json
+  {
+    "message": "Error message"
   }
   ```
