@@ -1,0 +1,18 @@
+{
+  "name": "task-2",
+  "version": "1.0.0",
+  "description": "API Auth",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rezanuki pangestu",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
